@@ -1,12 +1,12 @@
 import express from "express";
-import { upload } from "./middlewares/multer.middleware.js";
+import { upload } from "./src/middlewares/multer.middleware.js";
 import dotenv from "dotenv"
 import cors from "cors"
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import { deleteFromCloudnary, getImagesFromCloudnary, uploadOnCloudnary } from "./utils/cloudnary.js";
+import { deleteFromCloudnary, getImagesFromCloudnary, uploadOnCloudnary } from "./src/utils/cloudnary.js";
 
 
 // Get the current module's URL
