@@ -33,7 +33,7 @@ app.use(cors({
     credentials: true
 }))
 
-app.use('/public', express.static("public"));
+app.use('/public', express.static("temp"));
 
 
 app.post('/upload-image',upload.single('image'), async (req,res) => {
